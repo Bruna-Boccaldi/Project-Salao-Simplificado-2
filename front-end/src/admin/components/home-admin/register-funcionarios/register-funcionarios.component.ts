@@ -5,11 +5,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { FuncionarioInterface } from 'src/interfaces/funcionario-interface';
 import { Funcionario, FuncionariosColumns } from 'src/admin/interfaces/funcionario';
 
-
-
-const COLUMNS_SCHEMA = [
-
-]
+const COLUMNS_SCHEMA = []
 
 @Component({
   selector: 'app-register-funcionarios',
@@ -29,8 +25,7 @@ export class RegisterFuncionariosComponent implements OnInit {
 
   constructor(
     private adminService: AdminService
-  ) {
-   }
+  ) {}
 
   ngOnInit(): void {
 
@@ -38,7 +33,6 @@ export class RegisterFuncionariosComponent implements OnInit {
       (resposta: any) => {
         this.dataSource.data = resposta
         console.log('Essa é a resposta do dataSource: ', this.dataSource.data);
-
       }
     )
   }
@@ -52,7 +46,6 @@ export class RegisterFuncionariosComponent implements OnInit {
       cpf: '',
       email: '',
       senha: '',
-      isEdit: true
     };
     this.dataSource.data = [...this.dataSource.data];
   }

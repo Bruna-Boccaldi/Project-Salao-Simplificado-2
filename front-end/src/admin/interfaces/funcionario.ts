@@ -1,9 +1,8 @@
 export interface Funcionario {
-  nome?: any;
-  cpf?: any;
-  email?: any;
-  senha?: any
-  isEdit?: any;
+  nome: string;
+  cpf: string;
+  email: string;
+  senha: string
 }
 
 export const FuncionariosColumns = [
@@ -13,9 +12,9 @@ export const FuncionariosColumns = [
     label: "Full Name"
 },
 {
-    key: "CPF",
+    key: "cpf",
     type: "text",
-    label: "CPF"
+    label: "cpf"
 },
 {
     key: "email",

@@ -67,7 +67,6 @@ import { HomeAdminComponent } from 'src/admin/components/home-admin/home-admin.c
     MatCheckboxModule,
     MatGridListModule,
     FormsModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
