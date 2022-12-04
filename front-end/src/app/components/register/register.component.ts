@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
 
   hide = true;
 
-  // --> FALTA IMPLEMENTAR A LÓGICA PARA NÃO DEIXAR USUÁRIO DIGITAR ESPAÇOS EM BRANCO <--
+
 
   //Botão confirmar registro
   public confirmRegister() {
